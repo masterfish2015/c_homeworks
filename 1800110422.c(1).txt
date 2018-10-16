@@ -1,0 +1,19 @@
+﻿#include <stdio.h>
+int main()
+{
+float r,h,c,s1,s2,v1,v2;
+scanf("%.2f,%.2f",&r,&h);
+r=1.5;
+h=3;
+c=2*r*3.14;
+s1=r*r*3.14;
+s2=4*3.14*r*r;
+v1=3.14*r*r*r*4.0/3;
+v2=3.14*r*r*h;
+printf("圆周长=%.2f\n",c);
+printf("圆面积=%.2f\n",s1);
+printf("圆球表面积=%.2f\n",s2);
+printf("圆球体积=%.2f\n",v1);
+printf("圆柱体积=%.2f\n",v2);
+return 0;
+}
