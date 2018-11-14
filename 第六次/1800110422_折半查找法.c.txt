@@ -1,0 +1,29 @@
+﻿#include <stdio.h>
+int main(void)
+{int num[15]={2,4,5,6,8,13,13,14,19,21,27,31,32,36,62};
+	int key, n;
+	int low, high, mid;
+
+	printf("Put in a number:");
+	scanf("%d", &key);
+	
+	for(low=0, high=7; low<=high;)
+	{
+		mid = (high+low)/2;
+		if(key==num[mid])
+		{
+			printf("Find. %d's position is %d\n", key, mid+1);
+			break;
+		}
+		else if(key > num[mid])
+			low = mid+1; 
+		else
+			high = mid-1;
+	}
+	if(low>high)
+		printf("Not find.\n");
+
+	system("pause"); 
+
+	return 0;
+}
